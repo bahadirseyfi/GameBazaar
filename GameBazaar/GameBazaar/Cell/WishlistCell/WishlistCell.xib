@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="WishlistCell" customModule="GameBazaar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="243"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="243"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-by-V2K" userLabel="Container">
+                        <rect key="frame" x="0.0" y="0.0" width="171" height="243"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GWa-sb-NJO">
+                                <rect key="frame" x="0.0" y="0.0" width="171" height="171"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyberpunk 2077" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yye-Y3-0bl">
+                                <rect key="frame" x="12" y="183" width="147" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQV-1L-ndk">
+                                <rect key="frame" x="126" y="9" width="36" height="36"/>
+                                <color key="backgroundColor" red="0.36550515890000002" green="0.77275103329999995" blue="0.2044852972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Kwa-Hg-TyF"/>
+                                    <constraint firstAttribute="width" constant="36" id="juC-dd-w8u"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="gift" catalog="system"/>
+                                <connections>
+                                    <action selector="wishlistButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="L9K-Le-Pdo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17645144460000001" green="0.17648285629999999" blue="0.1764445603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sQV-1L-ndk" secondAttribute="trailing" constant="9" id="Cfo-Vj-APP"/>
+                            <constraint firstItem="yye-Y3-0bl" firstAttribute="top" secondItem="GWa-sb-NJO" secondAttribute="bottom" constant="12" id="Jns-st-X5r"/>
+                            <constraint firstAttribute="trailing" secondItem="yye-Y3-0bl" secondAttribute="trailing" constant="12" id="NYr-Ve-WtN"/>
+                            <constraint firstItem="GWa-sb-NJO" firstAttribute="leading" secondItem="hz8-by-V2K" secondAttribute="leading" id="a1r-lb-wWA"/>
+                            <constraint firstItem="sQV-1L-ndk" firstAttribute="top" secondItem="hz8-by-V2K" secondAttribute="top" constant="9" id="fBp-6X-d10"/>
+                            <constraint firstItem="GWa-sb-NJO" firstAttribute="top" secondItem="hz8-by-V2K" secondAttribute="top" id="mJr-yh-F1F"/>
+                            <constraint firstAttribute="trailing" secondItem="GWa-sb-NJO" secondAttribute="trailing" id="mOp-lL-p0x"/>
+                            <constraint firstItem="yye-Y3-0bl" firstAttribute="leading" secondItem="hz8-by-V2K" secondAttribute="leading" constant="12" id="ozZ-yS-tfJ"/>
+                            <constraint firstAttribute="bottom" secondItem="yye-Y3-0bl" secondAttribute="bottom" constant="12" id="pSI-xH-xer"/>
+                            <constraint firstItem="GWa-sb-NJO" firstAttribute="height" secondItem="hz8-by-V2K" secondAttribute="height" multiplier="0.703704" id="s7h-fO-KU7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hz8-by-V2K" secondAttribute="trailing" id="JXw-ZC-bFZ"/>
+                <constraint firstItem="hz8-by-V2K" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="U45-a3-kVk"/>
+                <constraint firstAttribute="bottom" secondItem="hz8-by-V2K" secondAttribute="bottom" id="W45-Rt-JKv"/>
+                <constraint firstItem="hz8-by-V2K" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="o5W-rx-3BY"/>
+            </constraints>
+            <size key="customSize" width="213" height="232"/>
+            <connections>
+                <outlet property="imageView" destination="GWa-sb-NJO" id="N7M-F8-B45"/>
+                <outlet property="nameLabel" destination="yye-Y3-0bl" id="JNo-xm-8vq"/>
+                <outlet property="wishlistButton" destination="sQV-1L-ndk" id="GMW-Ig-Ewf"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="51.227678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gift" catalog="system" width="128" height="124"/>
+    </resources>
+</document>

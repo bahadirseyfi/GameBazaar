@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j7N-Sh-30D">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Games-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="GameBazaar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1083143875" green="0.1083365753" blue="0.1083095297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Games" id="Gva-6n-nkp">
+                        <barButtonItem key="rightBarButtonItem" landscapeImage="book" catalog="system" id="KkM-1E-ZbM">
+                            <imageReference key="image" image="book.circle" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="layoutButtonTapped:" destination="BYZ-38-t0r" id="mbP-da-Ikk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2499" y="-56"/>
+        </scene>
+        <!--Search Suggestion View Controller-->
+        <scene sceneID="TCK-7k-iEr">
+            <objects>
+                <viewController storyboardIdentifier="SearchSuggestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Beu-2E-Paw" customClass="SearchSuggestionViewController" customModule="GameBazaar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DuU-1J-tma">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mS1-SQ-Ws6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VU-dT-JKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3471" y="-56"/>
+        </scene>
+        <!--Wishlist-->
+        <scene sceneID="adR-c0-oQe">
+            <objects>
+                <viewController storyboardIdentifier="WishlistViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1uH-ww-r2G" customClass="WishlistViewController" customModule="GameBazaar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KGf-kJ-GNg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFx-SO-zfw" userLabel="TopSpacer">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No wishlisted game has been found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rz-K6-viD">
+                                <rect key="frame" x="20" y="206" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sNk-yZ-obS"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hFx-SO-zfw" firstAttribute="height" secondItem="KGf-kJ-GNg" secondAttribute="height" multiplier="0.23" id="3qi-eD-vNC"/>
+                            <constraint firstItem="hFx-SO-zfw" firstAttribute="trailing" secondItem="sNk-yZ-obS" secondAttribute="trailing" id="94K-oB-IRd"/>
+                            <constraint firstItem="7rz-K6-viD" firstAttribute="leading" secondItem="sNk-yZ-obS" secondAttribute="leading" constant="20" id="9WC-aF-0FN"/>
+                            <constraint firstItem="hFx-SO-zfw" firstAttribute="leading" secondItem="sNk-yZ-obS" secondAttribute="leading" id="G68-9g-cqt"/>
+                            <constraint firstItem="hFx-SO-zfw" firstAttribute="top" secondItem="KGf-kJ-GNg" secondAttribute="top" id="JLf-rd-WFk"/>
+                            <constraint firstItem="7rz-K6-viD" firstAttribute="top" secondItem="hFx-SO-zfw" secondAttribute="bottom" id="lKO-OF-gVs"/>
+                            <constraint firstItem="sNk-yZ-obS" firstAttribute="trailing" secondItem="7rz-K6-viD" secondAttribute="trailing" constant="20" id="zrZ-Q9-EAY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wishlist" image="gift" catalog="system" selectedImage="gift" id="QRh-lb-gBj"/>
+                    <connections>
+                        <outlet property="noWishlistLabel" destination="7rz-K6-viD" id="tT0-Di-T4M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="097-aO-580" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2498.5507246376815" y="673.66071428571422"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8r3-Lb-QpV">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" id="j7N-Sh-30D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="dOb-ma-w1i">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ENI-Bn-HAJ" kind="relationship" relationship="viewControllers" id="2a5-y4-tdD"/>
+                        <segue destination="1uH-ww-r2G" kind="relationship" relationship="viewControllers" id="9kG-df-vBD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTt-xN-pLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="-56.25"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="CXF-Kj-5iB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ENI-Bn-HAJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Games" selectedImage="gamecontroller" catalog="system" id="QFx-UF-IcI">
+                        <imageReference key="image" image="gamecontroller" catalog="system" symbolScale="small" renderingMode="template"/>
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Y8K-OI-jp6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ARr-Gw-Xlk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z95-0K-ypl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofK-9r-pfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1609" y="-56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <image name="book.circle" catalog="system" width="128" height="121"/>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="gift" catalog="system" width="128" height="124"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
